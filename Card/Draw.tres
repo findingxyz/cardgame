@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://dwde6tnxw4dic"]
+
+[ext_resource type="Script" path="res://Card/Draw.gd" id="1_jqnpg"]
+
+[resource]
+script = ExtResource("1_jqnpg")
+id = &"Draw"
+num_targets = 0
+target_range = 0
+description = "Draw a card."
+basic = false
+target_type = 0
+mana_cost = 1

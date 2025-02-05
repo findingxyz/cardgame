@@ -1,0 +1,12 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://h1xrpiielu7e"]
+
+[ext_resource type="Script" path="res://Card/Basic/Move.gd" id="1_cqmmm"]
+
+[resource]
+script = ExtResource("1_cqmmm")
+id = &"Move"
+num_targets = 0
+description = ""
+basic = true
+target_type = 0
+mana_cost = 0

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://qptuoyfga74d"]
+
+[ext_resource type="Script" path="res://Card/Vitalize.gd" id="1_kbvvb"]
+
+[resource]
+script = ExtResource("1_kbvvb")
+id = &"Vitalize"
+num_targets = 2
+description = "2 target units gain 3 max hp and heal for 3."
+target_type = 5
+mana_cost = 4

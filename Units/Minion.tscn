@@ -1,0 +1,44 @@
+[gd_scene load_steps=7 format=3 uid="uid://lmvievp7fjfl"]
+
+[ext_resource type="Texture2D" uid="uid://cxum74y6rek3w" path="res://icon.svg" id="1_usssk"]
+[ext_resource type="Script" path="res://Unit.gd" id="2_ilej0"]
+[ext_resource type="Script" path="res://Stats/CreatureStats.gd" id="3_d3sjo"]
+
+[sub_resource type="Resource" id="Resource_rqhuf"]
+script = ExtResource("3_d3sjo")
+attack = 1
+max_move = 3
+max_hp = 1
+
+[sub_resource type="LabelSettings" id="LabelSettings_s3eje"]
+font_size = 36
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dht6q"]
+size = Vector2(128, 128)
+
+[node name="Sprite2D" type="Sprite2D"]
+position = Vector2(559, 166)
+texture = ExtResource("1_usssk")
+script = ExtResource("2_ilej0")
+stats = SubResource("Resource_rqhuf")
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -104.0
+offset_top = -87.0
+offset_right = -64.0
+offset_bottom = -64.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "9/9"
+label_settings = SubResource("LabelSettings_s3eje")
+horizontal_alignment = 2
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_dht6q")

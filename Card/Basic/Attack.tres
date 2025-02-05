@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://dh51ulp7t0jjm"]
+
+[ext_resource type="Script" path="res://Card/Basic/Attack.gd" id="1_7v7u6"]
+
+[resource]
+script = ExtResource("1_7v7u6")
+id = &"Attack"
+basic = true
+mana_cost = 0
+num_targets = 1
+target_type = 5
+target_range = 1
+description = ""

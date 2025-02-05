@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://c2hke6v38nwqt"]
+
+[ext_resource type="Script" path="res://Card/Bolt.gd" id="1_wyors"]
+
+[resource]
+script = ExtResource("1_wyors")
+id = &"Bolt"
+basic = false
+mana_cost = 1
+num_targets = 1
+target_type = 5
+target_range = 3
+description = "Target unit takes 3 damage."

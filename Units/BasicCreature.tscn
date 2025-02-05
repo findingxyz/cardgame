@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3 uid="uid://pxy1c4rt0nj2"]
+
+[ext_resource type="Texture2D" uid="uid://cxum74y6rek3w" path="res://icon.svg" id="1_ia3iw"]
+[ext_resource type="Script" path="res://Unit.gd" id="2_lhce0"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_s3eje"]
+font_size = 36
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dht6q"]
+size = Vector2(128, 128)
+
+[node name="Sprite2D" type="Sprite2D"]
+position = Vector2(559, 166)
+texture = ExtResource("1_ia3iw")
+script = ExtResource("2_lhce0")
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -104.0
+offset_top = -87.0
+offset_right = -64.0
+offset_bottom = -64.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "9/9"
+label_settings = SubResource("LabelSettings_s3eje")
+horizontal_alignment = 2
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_dht6q")

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://bl30c7ws4prq4"]
+
+[ext_resource type="Script" path="res://Card/SummonMinion.gd" id="1_m26yb"]
+[ext_resource type="PackedScene" uid="uid://lmvievp7fjfl" path="res://Units/Minion.tscn" id="2_4uh8j"]
+
+[resource]
+script = ExtResource("1_m26yb")
+unit = ExtResource("2_4uh8j")
+id = &"Summon Minion"
+basic = false
+mana_cost = 1
+num_targets = 1
+target_type = 6
+target_range = 0
+description = "Summons a 1/1 minion."

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://xuxvfjbqubw5"]
+
+[ext_resource type="Script" path="res://Card/Basic/Gild.gd" id="1_e0u3j"]
+
+[resource]
+script = ExtResource("1_e0u3j")
+id = &"Gild"
+num_targets = 1
+description = ""
+basic = true
+target_type = 7
+mana_cost = 0

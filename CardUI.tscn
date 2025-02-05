@@ -1,0 +1,73 @@
+[gd_scene load_steps=6 format=3 uid="uid://bhemfuvtjr0so"]
+
+[ext_resource type="Script" path="res://CardUI.gd" id="1_17meg"]
+[ext_resource type="Texture2D" uid="uid://cxum74y6rek3w" path="res://icon.svg" id="2_wlhew"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_mhord"]
+font_size = 13
+
+[sub_resource type="LabelSettings" id="LabelSettings_wpo7u"]
+font_size = 11
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ospgl"]
+size = Vector2(125, 175)
+
+[node name="CardUI" type="ColorRect"]
+custom_minimum_size = Vector2(125, 175)
+mouse_filter = 1
+color = Color(0.54902, 0.266667, 0, 1)
+script = ExtResource("1_17meg")
+
+[node name="Name" type="Label" parent="."]
+custom_minimum_size = Vector2(100, 2.08165e-12)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -50.0
+offset_right = 50.0
+offset_bottom = 23.0
+grow_horizontal = 2
+text = "Ancestral Recall"
+label_settings = SubResource("LabelSettings_mhord")
+horizontal_alignment = 1
+
+[node name="Description" type="Label" parent="."]
+custom_minimum_size = Vector2(100, 2.08165e-12)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -60.5
+offset_top = -94.0
+offset_right = 61.5
+grow_horizontal = 2
+grow_vertical = 0
+text = "Target player draws three cards."
+label_settings = SubResource("LabelSettings_wpo7u")
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -52.5
+offset_right = 20.0
+offset_bottom = -12.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_wlhew")
+expand_mode = 3
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(62.5, 87.5)
+shape = SubResource("RectangleShape2D_ospgl")
